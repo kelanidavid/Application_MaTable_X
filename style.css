@@ -11,6 +11,7 @@ body, html{
     height: 70px;
     background-color: blue;
     width: 100%;
+    
 }
 .navbar{
     height: inherit;
@@ -22,6 +23,7 @@ body, html{
     right: 0;
     left: 0;
     background-color: blue;
+    z-index: 1;
 }
 .logo{
     color: #fff;
@@ -96,6 +98,9 @@ body, html{
     padding-right: 30px;
     transform: translateY(3px);
 }
+.boite_mail a{
+    text-decoration: none;
+}
 .boite_mail svg{
     stroke: #fff;
     height: 25px;
@@ -137,6 +142,7 @@ body, html{
     background-color: #c4c4c473;
     width: 100%;
     display: flex;
+
 }
 .div_cover{
     width: 20%;
@@ -185,7 +191,7 @@ body, html{
     color: blue;
 }
 
-/*--------style de la page de connexion--------ooooooooooooooooooooooooooooooooo*/
+/*--------style de la page de connexion et de la page d'ajout--------ooooooooooooooooooooooooooooooooo*/
 
 .connexion_main{
     display: flex;
@@ -227,4 +233,71 @@ body, html{
 .btn input:first-child{
     padding: 5px 10px;
     margin-right: 10px;
+}
+
+/*--------style de la page des regles du jeu--------ooooooooooooooooooooooooooooooooo*/
+
+.regles_main{
+    margin: 0;
+    box-sizing: border-box;
+    height: auto;
+    font-size: 13px;
+    line-height: 1.3em;
+    letter-spacing: 1.1px;
+    color:rgba(0, 0, 0, 0.829);
+    font-family: sans-serif;
+    padding-top: 20px;
+    
+}
+.regles_sidebar{
+    display: flex;
+    
+    position: inherit; 
+}
+.sticky h2{
+    font-size: 20px;
+    color: #000000c2;
+}
+
+.acces_rapide{
+    width: 20%;
+    margin-left: 30px;
+    
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+.acces_rapide_elements ul{
+    padding: 0;
+    margin: 0;
+}
+.acces_rapide_elements ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.acces_rapide_elements ul li a{
+    text-decoration: none;
+}
+.acces_rapide button a{
+    text-decoration: none;
+}
+.apropos_des_regles{
+    width: 80%;
+    margin-right: 30px;
+}
+.apropos_des_regles h2{
+    font-size: 35px;
+    color: #000000c2;
+    margin-top: 17px;
+}
+.apropos_des_regles > div h3{
+    
+    color: #00000086;
+}
+.apropos_des_regles > div{
+    width: 850px;
 }
