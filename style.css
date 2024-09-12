@@ -1,0 +1,230 @@
+/*--------style du header--------ooooooooooooooooooooooooooo*/
+body, html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    background-color: #ffffffa8;
+}
+.header{
+    height: 70px;
+    background-color: blue;
+    width: 100%;
+}
+.navbar{
+    height: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: blue;
+}
+.logo{
+    color: #fff;
+    font-size: 27px;
+    width: 20%;
+    margin-left: 30px;
+}
+.logo::first-letter{
+    font-size: 30px;
+}
+.logo span{
+    color: yellow;
+    font-size: 24px;
+    margin-right: -5px;
+}
+.links{
+    width: 50%;
+}
+.myList{
+    display: flex;
+    margin: 0;
+    justify-content: flex-start;
+    padding: 0
+}
+.myList li{
+    list-style: none;
+    transform: translateY(3px);
+    padding: 0 20px;
+}
+.myList li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+.myList li:first-of-type{
+    padding-left: 0;
+}
+.myList li a::after{
+    content: '';
+    height: 2.5px;
+    width: 0;
+    background-color: #fff;
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    transition: .2s all ease-in-out;
+}
+.myList li a span::after{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    transition: .2s all ease-in-out;
+}
+.myList li a:hover::after{
+    width: 100%;
+    left: 0;
+}
+.boite_mail{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    width: 30%;
+    height: 70px;
+    align-items: center;
+    padding-right: 30px;
+    transform: translateY(3px);
+}
+.boite_mail svg{
+    stroke: #fff;
+    height: 25px;
+    width: 27px;
+    transition: .2s ease-out;
+}
+.boite_mail a:first-child svg:hover{
+    transform: scale(1.2);
+}
+.boite_mail a:first-child span{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin-left: 3px;
+    position:relative;
+}
+.boite_mail a button{
+    width: auto;
+    padding: 7px;
+    color: rgba(0, 0, 255, 0.801);
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: .2s ease-in-out;
+}
+.boite_mail a button:hover{
+    color: rgba(0, 0, 255, 0.781);
+    background-color: #ffffffab;
+}
+
+/*--------style de la page d'acceuil--------ooooooooooooooooooooooooo*/
+.accueil_main{
+    height: 40px;
+    background-color: #c4c4c473;
+    width: 100%;
+    display: flex;
+}
+.div_cover{
+    width: 20%;
+    padding-left: 30px;
+}
+.presentation_operations{
+    width: 50%;
+    height: 40px;
+}
+.operations_List{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+}
+.opr{
+    list-style: none;
+    padding: 0 10px;
+}
+.opr:first-child{
+    padding-left: 0;
+}
+.operations_List  a{
+    font-size: 12px;
+    text-decoration: none;
+}
+.welcome {
+    width: 30%;
+    height: 40px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.welcome svg{
+    height: 30px;
+    width: 35px;
+    stroke: blue;
+    transition: .2s ease-in-out;
+}
+.welcome svg:hover{
+    transform: scale(1.2);
+}
+.welcome h3{
+    font-size: 16px;
+    color: blue;
+}
+
+/*--------style de la page de connexion--------ooooooooooooooooooooooooooooooooo*/
+
+.connexion_main{
+    display: flex;
+    justify-content: center;
+    height: 470px;
+    padding-top: 30px; 
+}
+.connexion_formulaire{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.connexion_formulaire form > div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.div_password{
+    height: 10px;
+    margin: 0;
+}
+.div_password p{
+    margin-top: 10px;
+}
+.connexion_formulaire form > div label{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.connexion_formulaire form > div input{
+    height: 25px;
+    width: 500px;
+}
+.btn{
+    transform: translateY(20px);
+}
+.btn input{
+    padding: 5px 10px;
+}
+.btn input:first-child{
+    padding: 5px 10px;
+    margin-right: 10px;
+}
