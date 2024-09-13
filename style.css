@@ -137,12 +137,20 @@ body, html{
 }
 
 /*--------style de la page d'acceuil--------ooooooooooooooooooooooooo*/
+
 .accueil_main{
     height: 40px;
     background-color: #c4c4c473;
     width: 100%;
     display: flex;
-
+}
+.div_cover{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 255, 0.623);
+    font-size: 12.5px;
+    margin-top: 3px;
 }
 .div_cover{
     width: 20%;
@@ -191,6 +199,21 @@ body, html{
     color: blue;
 }
 
+.baniaire_de_bienvenue{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.baniaire_de_bienvenue p{
+    font-size: 140px;
+    margin: 0;
+}
+.baniaire_accueil{
+    height: 350px;
+    background-color: #c4c4c473;
+}
+
 /*--------style de la page de connexion et de la page d'ajout--------ooooooooooooooooooooooooooooooooo*/
 
 .connexion_main{
@@ -217,12 +240,23 @@ body, html{
     margin-top: 10px;
 }
 .connexion_formulaire form > div label{
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 5px;
 }
 .connexion_formulaire form > div input{
-    height: 25px;
-    width: 500px;
+    height: 22px;
+    width: 545px;
+    margin-bottom: 10px;
+    border: .01px solid black;
+    transition: .1s ease-out;
+    padding: 3px 10px;
+    color: #000000dc;
+    font-size: 14.5px;
+    letter-spacing: 1.8px;
+}
+.connexion_formulaire form > div input:hover{
+    box-shadow: 0 0 5px #443;
+    border: .01px solid rgba(0, 0, 0, 0.692);
 }
 .btn{
     transform: translateY(20px);
